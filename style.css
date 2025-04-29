@@ -1,0 +1,140 @@
+body {
+    font-family: sans-serif;
+    background-color: #f4f4f4;
+    color: #333;
+    margin: 0;
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start; /* Changed from center to flex-start to avoid cutting off top */
+    min-height: 100vh; /* Ensure it takes full viewport height */
+}
+
+.container {
+    background-color: #fff;
+    padding: 30px;
+    border-radius: 8px;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+    text-align: center;
+    max-width: 600px; /* Limit maximum width */
+    width: 100%; /* Ensure it takes available width up to max-width */
+}
+
+header {
+    margin-bottom: 30px;
+}
+
+.profile-pic {
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-bottom: 15px;
+    border: 3px solid #eee;
+}
+
+h1 {
+    margin: 10px 0 5px 0;
+    font-size: 1.8em;
+    color: #444;
+}
+
+p {
+    margin: 0 0 20px 0;
+    color: #666;
+    font-size: 1.1em;
+}
+
+.social-links {
+    margin-bottom: 30px;
+}
+
+.social-links a {
+    color: #333;
+    font-size: 1.8em; /* Larger icons */
+    margin: 0 12px;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+.social-links a:hover {
+    color: #007bff; /* Change color on hover */
+}
+
+.custom-links a.link-button {
+    display: block;
+    background-color: #007bff;
+    color: white;
+    padding: 15px 20px;
+    margin: 10px 0;
+    border-radius: 5px;
+    text-decoration: none;
+    font-size: 1em;
+    font-weight: bold;
+    transition: background-color 0.3s ease;
+    position: relative; /* For icon positioning */
+    text-align: left; /* Align text to the left */
+    padding-left: 50px; /* Make space for the icon */
+}
+
+.custom-links a.link-button:hover {
+    background-color: #0056b3;
+}
+
+.custom-links .icon-left {
+    position: absolute;
+    left: 15px;
+    top: 50%;
+    transform: translateY(-50%);
+    font-size: 1.2em;
+}
+
+/* Style for the embedded Bluesky SVG icon */
+.bluesky-icon {
+    width: 1.2em; /* Match the size of other icons */
+    height: 1.2em; /* Match the size of other icons */
+    fill: currentColor; /* Use the link's text color by default, SVG path has its own fill */
+    vertical-align: middle; /* Align better with text if needed */
+    /* Keep positioning styles from .icon-left */
+    position: absolute;
+    left: 15px;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+footer {
+    margin-top: 30px;
+    font-size: 0.9em;
+    color: #aaa;
+}
+
+/* Responsive adjustments */
+@media (max-width: 600px) {
+    body {
+        padding: 10px;
+    }
+    .container {
+        padding: 20px;
+    }
+    h1 {
+        font-size: 1.5em;
+    }
+    p {
+        font-size: 1em;
+    }
+    .social-links a {
+        font-size: 1.6em;
+        margin: 0 10px;
+    }
+    .custom-links a.link-button {
+        padding: 12px 15px;
+        padding-left: 45px; /* Adjust space for icon */
+    }
+     .custom-links .icon-left {
+        left: 12px;
+    }
+    /* Adjust SVG icon position on smaller screens */
+    .bluesky-icon {
+        left: 12px;
+    }
+} 
