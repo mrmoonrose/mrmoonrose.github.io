@@ -65,6 +65,7 @@ p {
 .custom-links a.link-button {
     display: flex; /* Flexbox kullan */
     align-items: center; /* Dikeyde ortala */
+    justify-content: center; /* Yatayda ortala */
     background-color: #f0f0f0; /* Ensure light grey background */
     color: #333; /* Ensure dark text color */
     padding: 15px 20px; /* Padding'i koru, soldaki padding-left'i kaldıracağız */
@@ -75,7 +76,7 @@ p {
     font-weight: bold;
     transition: background-color 0.3s ease;
     /* position: relative; Artık gerekli değil */
-    text-align: left; /* Text-align artık gerekli değil, flex hallediyor */
+    /* text-align: left; Artık gerekli değil */
     /* padding-left: 50px;  Kaldırıldı */
 }
 
