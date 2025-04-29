@@ -35,8 +35,10 @@ header {
 
 h1 {
     margin: 10px 0 5px 0;
-    font-size: 1.8em;
+    font-size: 2.2em; /* Biraz büyültebiliriz */
     color: #444;
+    font-family: "Winky Rough", sans-serif; /* Yeni fontu uygula */
+    font-weight: normal; /* Fontun kendi ağırlığını kullan */
 }
 
 p {
