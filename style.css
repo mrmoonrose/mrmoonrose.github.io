@@ -63,31 +63,34 @@ p {
 }
 
 .custom-links a.link-button {
-    display: block;
-    background-color: #f0f0f0;
-    color: #333;
-    padding: 15px 20px;
+    display: flex; /* Flexbox kullan */
+    align-items: center; /* Dikeyde ortala */
+    background-color: #f0f0f0; /* Ensure light grey background */
+    color: #333; /* Ensure dark text color */
+    padding: 15px 20px; /* Padding'i koru, soldaki padding-left'i kaldıracağız */
     margin: 10px 0;
     border-radius: 5px;
     text-decoration: none;
     font-size: 1em;
     font-weight: bold;
     transition: background-color 0.3s ease;
-    position: relative; /* For icon positioning */
-    text-align: left; /* Align text to the left */
-    padding-left: 50px; /* Make space for the icon */
+    /* position: relative; Artık gerekli değil */
+    text-align: left; /* Text-align artık gerekli değil, flex hallediyor */
+    /* padding-left: 50px;  Kaldırıldı */
 }
 
 .custom-links a.link-button:hover {
-    background-color: #e0e0e0;
+    background-color: #e0e0e0; /* Ensure darker grey on hover */
 }
 
 .custom-links .icon-left {
-    position: absolute;
-    left: 15px;
-    top: 50%;
-    transform: translateY(-50%);
+    /* position: absolute; Kaldırıldı */
+    /* left: 15px; Kaldırıldı */
+    /* top: 50%; Kaldırıldı */
+    /* transform: translateY(-50%); Kaldırıldı */
     font-size: 1.2em;
+    margin-right: 10px; /* İkon ve yazı arasına boşluk ekle */
+    flex-shrink: 0; /* İkonun küçülmesini engelle */
 }
 
 /* Style for the embedded Bluesky SVG icon */
@@ -95,12 +98,10 @@ p {
     width: 1.2em; /* Match the size of other icons */
     height: 1.2em; /* Match the size of other icons */
     fill: currentColor; /* Use the link's text color by default, SVG path has its own fill */
-    vertical-align: middle; /* Align better with text if needed */
-    /* Keep positioning styles from .icon-left */
-    position: absolute;
-    left: 15px;
-    top: 50%;
-    transform: translateY(-50%);
+    vertical-align: middle; /* Flexbox bunu büyük ölçüde halleder ama kalsın */
+    /* Kaldırılan absolute pozisyonlama kuralları */
+    margin-right: 10px; /* İkon ve yazı arasına boşluk ekle */
+    flex-shrink: 0; /* İkonun küçülmesini engelle */
 }
 
 footer {
@@ -129,13 +130,8 @@ footer {
     }
     .custom-links a.link-button {
         padding: 12px 15px;
-        padding-left: 45px; /* Adjust space for icon */
+        /* padding-left: 45px; Kaldırıldı */
     }
-     .custom-links .icon-left {
-        left: 12px;
-    }
-    /* Adjust SVG icon position on smaller screens */
-    .bluesky-icon {
-        left: 12px;
-    }
+     /* .custom-links .icon-left için özel mobil kuralına gerek kalmadı */
+     /* .bluesky-icon için özel mobil kuralına gerek kalmadı */
 } 
