@@ -1,7 +1,7 @@
 body {
     font-family: "Winky Rough", sans-serif; /* Tüm sayfaya uygula */
-    background-color: #f4f4f4;
-    color: #333;
+    background-color: #120b1a; /* Dark background */ 
+    color: #f0f0f0; /* Light default text color */
     margin: 0;
     padding: 20px;
     display: flex;
@@ -11,10 +11,10 @@ body {
 }
 
 .container {
-    background-color: #fff;
+    background-color: #291f33; /* Dark gray container */
     padding: 30px;
     border-radius: 8px;
-    box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+    box-shadow: 0 2px 10px rgba(0,0,0,0.5); /* Darker shadow */
     text-align: center;
     max-width: 600px; /* Limit maximum width */
     width: 100%; /* Ensure it takes available width up to max-width */
@@ -25,25 +25,25 @@ header {
 }
 
 .profile-pic {
-    width: 120px;
-    height: 120px;
+    width: 145px; /* Increased size */
+    height: 145px; /* Increased size */
     border-radius: 50%;
     object-fit: cover;
     margin-bottom: 15px;
-    border: 3px solid #eee;
+    border: 3px solid #444; /* Darker border */
 }
 
 h1 {
     margin: 10px 0 5px 0;
-    font-size: 2.2em; /* Biraz büyültebiliriz */
-    color: #444;
+    font-size: 2.6em; /* Increased size */
+    color: #e0e0e0; /* Light heading color */
     font-weight: normal; /* Fontun kendi ağırlığını kullan */
 }
 
 p {
     margin: 0 0 20px 0;
-    color: #666;
-    font-size: 1.1em;
+    color: #bdbdbd; /* Lighter paragraph color */
+    font-size: 1.3em; /* Increased size */
 }
 
 .social-links {
@@ -51,28 +51,28 @@ p {
 }
 
 .social-links a {
-    color: #333;
-    font-size: 1.8em; /* Larger icons */
+    color: #f0f0f0; /* Light icon color */
+    font-size: 2.2em; /* Increased size */
     margin: 0 12px;
     text-decoration: none;
     transition: color 0.3s ease;
 }
 
 .social-links a:hover {
-    color: #007bff; /* Change color on hover */
+    color: #64b5f6; /* Lighter blue on hover */
 }
 
 .custom-links a.link-button {
     display: flex; /* Flexbox kullan */
     align-items: center; /* Dikeyde ortala */
     justify-content: center; /* Yatayda ortala */
-    background-color: #f0f0f0; /* Ensure light grey background */
-    color: #333; /* Ensure dark text color */
+    background-color: #291f33; /* Medium dark gray background */
+    color: #f0f0f0; /* Light text color */
     padding: 15px 20px; /* Padding'i koru, soldaki padding-left'i kaldıracağız */
     margin: 10px 0;
     border-radius: 5px;
     text-decoration: none;
-    font-size: 1em;
+    font-size: 1.2em; /* Increased size */
     font-weight: bold;
     transition: background-color 0.3s ease;
     /* position: relative; Artık gerekli değil */
@@ -81,7 +81,7 @@ p {
 }
 
 .custom-links a.link-button:hover {
-    background-color: #e0e0e0; /* Ensure darker grey on hover */
+    background-color: #555555; /* Slightly lighter gray on hover */
 }
 
 .custom-links .icon-left {
@@ -89,7 +89,7 @@ p {
     /* left: 15px; Kaldırıldı */
     /* top: 50%; Kaldırıldı */
     /* transform: translateY(-50%); Kaldırıldı */
-    font-size: 1.2em;
+    font-size: 1.4em; /* Increased size */
     margin-right: 10px; /* İkon ve yazı arasına boşluk ekle */
     flex-shrink: 0; /* İkonun küçülmesini engelle */
 }
@@ -107,8 +107,8 @@ p {
 
 footer {
     margin-top: 30px;
-    font-size: 0.9em;
-    color: #aaa;
+    font-size: 1.1em; /* Increased size */
+    color: #757575; /* Darker footer text */
 }
 
 /* Responsive adjustments */
@@ -120,19 +120,20 @@ footer {
         padding: 20px;
     }
     h1 {
-        font-size: 1.5em;
+        font-size: 1.8em; /* Increased size (responsive) */
     }
     p {
-        font-size: 1em;
+        font-size: 1.2em; /* Increased size (responsive) */
     }
     .social-links a {
-        font-size: 1.6em;
+        font-size: 1.9em; /* Increased size (responsive) */
         margin: 0 10px;
     }
     .custom-links a.link-button {
         padding: 12px 15px;
+        font-size: 1.1em; /* Added specific responsive size */
         /* padding-left: 45px; Kaldırıldı */
     }
-     /* .custom-links .icon-left için özel mobil kuralına gerek kalmadı */
+     /* .custom-links .icon-left will scale relatively */
      /* .bluesky-icon için özel mobil kuralına gerek kalmadı */
 } 
